@@ -30,7 +30,7 @@
                     "type": "shell"
                 },
                 {
-                    "background": "blue",
+                    "background": "188",
                     "foreground": "235",
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
@@ -38,7 +38,7 @@
                     "type": "sysinfo"
                 },
                 {
-                    "background": "blue",
+                    "background": "188",
                     "foreground": "235",
                     "style": "diamond",
                     "template": "MEM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB \ue706 ",
@@ -99,7 +99,7 @@
                     "background_templates": [
                         "{{ if or (.Working.Changed) (.Staging.Changed) }}yellow{{ end }}",
                         "{{ if and (gt .Ahead 0) (gt .Behind 0) }}magenta{{ end }}",
-                        "{{ if gt .Ahead 0 }}blue{{ end }}",
+                        "{{ if gt .Ahead 0 }}188{{ end }}",
                         "{{ if gt .Behind 0 }}red{{ end }}"
                     ],
                     "foreground": "235",
