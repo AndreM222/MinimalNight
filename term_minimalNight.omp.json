@@ -1,17 +1,13 @@
 
 {
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-    "palette": {
-        "DeepBlack": "#111111",
-        "DeepGrey": "#303030"
-    },
     "blocks": [
         {
             "alignment": "left",
             "newline": true,
             "segments": [
                 {
-                    "background": "p:DeepGrey",
+                    "background": "235",
                     "foreground": "white",
                     "leading_diamond": "\ue0b6",
                     "properties": {
@@ -25,7 +21,7 @@
                     "type": "os"
                 },
                 {
-                    "background": "p:DeepGrey",
+                    "background": "235",
                     "foreground": "white",
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
@@ -35,7 +31,7 @@
                 },
                 {
                     "background": "blue",
-                    "foreground": "p:DeepGrey",
+                    "foreground": "235",
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
                     "template": "\udb80\udf5b CPU: {{ round .PhysicalPercentUsed .Precision }}% | ",
@@ -43,14 +39,14 @@
                 },
                 {
                     "background": "blue",
-                    "foreground": "p:DeepGrey",
+                    "foreground": "235",
                     "style": "diamond",
                     "template": "MEM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB \ue706 ",
                     "trailing_diamond": "\uE0d6",
                     "type": "sysinfo"
                 },
                 {
-                    "background": "p:DeepBlack",
+                    "background": "232",
                     "foreground": "white",
                     "leading_diamond": "\ue0b2",
                     "properties": {
@@ -76,7 +72,7 @@
                     "powerline_symbol": "\uE0B0",
                     "leading_diamond": "\ue0b2",
                     "foreground": "lightGreen",
-                    "background": "p:DeepBlack",
+                    "background": "232",
                     "trailing_diamond": "\uE0d6",
                     "template": " \uE718{{ .Full }} ",
                     "properties": {
@@ -90,7 +86,7 @@
                     "powerline_symbol": "\uE0B0",
                     "leading_diamond": "\ue0b2",
                     "foreground": "yellow",
-                    "background": "p:DeepBlack",
+                    "background": "232",
                     "trailing_diamond": "\uE0d6",
                     "template": " \udb83\ude0f{{.Profile}}{{if .Region}}@{{.Region}}{{end}} ",
                     "properties": {
@@ -106,7 +102,7 @@
                         "{{ if gt .Ahead 0 }}blue{{ end }}",
                         "{{ if gt .Behind 0 }}red{{ end }}"
                     ],
-                    "foreground": "p:DeepGrey",
+                    "foreground": "235",
                     "leading_diamond": "\ue0b2",
                     "properties": {
                         "branch_icon": "\ue725 ",
