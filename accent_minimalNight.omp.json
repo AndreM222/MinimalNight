@@ -15,7 +15,7 @@
                         "windows": "\udb80\udf72 "
                     },
                     "style": "diamond",
-                    "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
+                    "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
                     "trailing_diamond": "\ue0d6",
                     "type": "os"
                 },
