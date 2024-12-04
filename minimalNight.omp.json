@@ -23,9 +23,9 @@
                     "foreground": "p:DeepWhite",
                     "leading_diamond": "\ue0b6",
                     "properties": {
-                        "macos": "\uf179 ",
-                        "ubuntu": "\uebc6 ",
-                        "windows": "\udb80\udf72 "
+                        "macos": "\uf179",
+                        "ubuntu": "\uebc6",
+                        "windows": "\udb80\udf72"
                     },
                     "style": "diamond",
                     "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
