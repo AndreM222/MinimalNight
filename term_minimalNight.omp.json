@@ -146,7 +146,7 @@
 
                     "style": "diamond",
                     "leading_diamond": "\ue0b2",
-                    "trailing_diamond": "\ue0b0",
+                    "trailing_diamond": "\ue0b0 ",
                     "template": " {{ .UpstreamIcon }} {{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \udb80\udc77 {{ .StashCount }}{{ end }} ",
                     "foreground": "235",
                     "background": "green",
